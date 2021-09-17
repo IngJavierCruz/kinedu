@@ -1,0 +1,57 @@
+
+.container-milestone {  
+    background-color: $mileston-background;
+    padding: 2rem 5rem;
+}
+
+.area  {
+    background-color: $physical-area;
+    color: #fff;
+
+    & .title {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    & .indicator {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+
+        & .indicator-item {
+            padding: .7rem 2rem;
+            font-weight: 800;
+            text-align: center;
+            min-width: 200px;
+            border: 1px solid #fff;
+        }
+
+        & .indicator--left {
+            border-radius: 1.5rem 0 0 1.5rem;
+            background-color: #fff;
+            color: $physical-area;
+        }
+
+        & .indicator--rigth {
+            border-radius: 0 1.5rem 1.5rem 0;
+            background-color: $physical-area;
+            color: #fff;
+        }
+
+
+    }
+}
+
+
+.milestone {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    color: $text-color-default;
+    font-weight: 400;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    
+    & .title {
+        font-weight: 800;
+    }
+}

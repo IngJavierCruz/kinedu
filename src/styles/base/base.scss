@@ -1,0 +1,17 @@
+* {
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
+    margin: 0;
+}
+
+html, body {
+    background-color: $body-background;
+}
+
+button:hover, 
+button:focus, 
+button:active {
+    outline: none;
+    border: none;
+}
+
+.pointer { cursor: pointer;}
