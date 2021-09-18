@@ -1,26 +1,24 @@
 .btn-milestone {
     padding: 1rem 2rem;
     display: inline-block;
-    background-color: $button-primary;
-    color: #ffffff;
     border-radius: 1.5rem;
     line-height: 1;
     border: none;
     font-weight: 700;
     max-width: 300px;
+    width: 200px;
     position: relative;
     margin-bottom: .4rem;
+    background-color: transparent;
 
     @include media-fluid(xs, lg) {
-        background-color: transparent;
         padding: 0;
-        color: $button-primary;
-        font-size: .8rem;     
+        font-size: .8rem;  
+        width: 100px;
     }
 
     & i {
         display: none;
-        color: #ffffff;
         justify-content: center;
         align-items: center;
         width: 2.5rem;
@@ -28,12 +26,56 @@
         border-radius: 100%;
         margin: auto;
         font-size: 1.2rem;
-        background-color: $button-primary;
         line-height: 1; 
         margin-bottom: .5rem;
 
         @include media-fluid(xs, lg) {
             display: flex; 
         }
+    }
+
+
+}
+
+
+ 
+.btn-milestone--default {
+    color: $text-color-default;
+    
+    @include media-fluid(lg) {
+        background-color: $button-primary-invert;
+    }
+
+    & i {
+        background-color: $button-primary-invert;
+        color: $text-color-default;
+    }
+} 
+
+.btn-milestone--completed {
+    color: $button-primary;
+
+    @include media-fluid(lg) {
+        color: #ffffff;
+        background-color: $button-primary;
+    }
+
+    & i {
+        background-color: $button-primary;
+        color: #ffffff;
+    }
+} 
+
+.btn-milestone--uncompleted {
+    color: $button-primary;
+
+    @include media-fluid(lg) {
+        color: $button-primary;
+        background: $button-primary-invert;
+    }
+
+    & i {
+        background-color: $button-primary-invert;
+        color: $button-primary;
     }
 }

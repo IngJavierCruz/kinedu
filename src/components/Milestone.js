@@ -1,22 +1,16 @@
 import React from "react";
 import { ButtonMilestone } from "./ButtonMilestone";
 
-export const Milestone = () => {
-    const data = {
-        title: "Bables like imitanting conversation.",
-        subtitle: "Usually",
-        ageRange: ""
-    };
-
+export const Milestone = ({ title, subtitle, ageRange, state, id }) => {
     return (
         <div className="milestone">
             <div>
-                <h5 className="card-title title">{ data.title }</h5>
-                <p className="card-text subtitle">{ data.subtitle }</p>
-                <h6>{ data.ageRange }</h6>
+                <h5 className="card-title title">{ title }</h5>
+                <p className="card-text subtitle">{ subtitle }</p>
+                <h6>{ ageRange }</h6>
             </div>
-            <div className="d-flex align-items-center">
-                <ButtonMilestone  />
+            <div className="d-flex align-items-center justify-content-end">
+                <ButtonMilestone key={id} state={state}  />
             </div>
         </div>
     );
