@@ -8,4 +8,25 @@
     border: none;
     font-weight: 700;
     max-width: 300px;
+    position: relative;
+    @include media-fluid(xs, lg) {
+        background-color: transparent;
+        padding: 0;
+        color: $button-primary;
+        font-size: .8rem;
+        &::after {
+            content: "\2714";
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 100%;
+            margin: auto;
+            margin-top: -3.5rem;
+            background-color: $button-primary;
+        }
+
+    }
 }
