@@ -69,6 +69,7 @@
 .milestone {
     display: grid;
     grid-template-columns: 1fr auto;
+    grid-gap: 1rem;
     color: $text-color-default;
     font-weight: 400;
     padding-top: 1.25rem;
@@ -76,6 +77,17 @@
     
     & .title {
         font-weight: 800;
+        margin-bottom: .2rem;
+        @include media-fluid(xs, sm) {
+            font-size: 1rem;
+        }
+    }
+
+    & .subtitle {
+        margin-bottom: .2rem;
+        @include media-fluid(xs, sm) {
+            font-size: .7rem;
+        }
     }
 }
 

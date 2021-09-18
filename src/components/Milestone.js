@@ -12,7 +12,7 @@ export const Milestone = () => {
         <div className="milestone">
             <div>
                 <h5 className="card-title title">{ data.title }</h5>
-                <p className="card-text">{ data.subtitle }</p>
+                <p className="card-text subtitle">{ data.subtitle }</p>
                 <h6>{ data.ageRange }</h6>
             </div>
             <div className="d-flex align-items-center">
