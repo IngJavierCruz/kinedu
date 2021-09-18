@@ -12,6 +12,10 @@
 .container-milestone {  
     background-color: $mileston-background;
     padding: 2rem 5rem;
+
+    @include media-fluid(xs, md) {
+        padding: 2rem 1.5rem;
+    }
 }
 
 .area  {

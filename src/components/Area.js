@@ -12,7 +12,7 @@ export const Area = () => {
             <hr className="divider" />
             
             <h2 className="skill">Skill: {skill}</h2>
-            <p>
+            <p className="text-center">
                 Lorem Ipsum is simply dummy text of the printing and 
                 typesetting industry. Lorem Ipsum has 
                 been the industry's standard dummy text ever 
