@@ -25,13 +25,12 @@
         text-align: center;
         font-weight: 900;
     }
-    // & .title {
-    //     font-size: 1rem;
-    // }
 
-    // & .skill {
-    //     font-size: 1.5rem;
-    // }
+    @include media-fluid(xs, md) {
+        & .title { font-size: 1rem; }
+    
+        & .skill { font-size: 1.5rem; }
+    }
 
     & .indicator {
         display: flex;
