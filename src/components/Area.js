@@ -1,6 +1,7 @@
 import React from "react";
 
 export const Area = () => {
+    const skill = "Secure attachment";
     return (
         <div className="container-milestone area">
             <h2 className="title">Areas</h2>
@@ -8,7 +9,9 @@ export const Area = () => {
                 <div className="indicator-item indicator--left">Physical</div>
                 <div className="indicator-item indicator--rigth">Social & emotional</div>
             </div>
-            <hr />
+            <hr className="divider" />
+            
+            <h2 className="skill">Skill: {skill}</h2>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and 
                 typesetting industry. Lorem Ipsum has 

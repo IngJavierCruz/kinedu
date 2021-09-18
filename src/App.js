@@ -3,7 +3,7 @@ import { Milestones } from './components/Milestones';
 
 function App() {
   return (
-    <div className="container">
+    <div className="container container-wrapper">
       <div className="card shadow">
         <Area className="card-body" />
         <Milestones className="card-body" />
