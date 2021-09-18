@@ -1,13 +1,9 @@
 import { React } from 'react';
+import { MilestoneStatus } from '../dictionary/milestone-status';
 
 export const ButtonMilestone = ({state}) => {
     return (
-        <button className={
-            `btn-milestone 
-            ${state === "Complete" ? " btn-milestone--completed" : ""}
-            ${state === "UnComplete" ? " btn-milestone--uncompleted" : "" }
-            ${state === "Not answered" ? " btn-milestone--default" : "" }
-        `}>
+        <button className={ `btn-milestone ${ MilestoneStatus[state] }`}>
             <i className="fas fa-check"></i>
             <span>{ state }</span>
         </button>

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { AppKinedu } from './AppKinedu';
 import './styles/styles.scss'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppKinedu />
   </React.StrictMode>,
   document.getElementById('root')
 );

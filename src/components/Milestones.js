@@ -1,34 +1,16 @@
 import React from "react";
+import { useSelector } from 'react-redux';
 import { Milestone } from "./Milestone";
 
-export const Milestones = () => {
-    const datas = [
-        {
-            id: 1,
-            title: "Babbles like imitating conversation.",
-            subtitle: "",
-            agaRange: "",
-            state: "Complete"
-        },
-        {
-            id: 2,
-            title: "Babbles like imitating conversation.",
-            subtitle: "Usually achieved by:",
-            agaRange: "2-4 months",
-            state: "UnComplete"
-        },
-        {
-            id: 3,
-            title: "Babbles like imitating conversation.",
-            subtitle: "Usually achieved by:",
-            agaRange: "2-4 months",
-            state: "Not answered"
-        }
-    ];
+export const Milestones = ({type}) => {
+    alert(type);
+    const { milestones } = useSelector(state => state.indicator);
+
     return (
         <div className="container-milestone">
             {
-                datas.map((x, i) =>  <Milestone key={i} {...x }  /> )
+                milestones.filter(x => x.typeSkill === type)
+                .map((x, i) =>  <Milestone key={i} {...x }  /> )
             }
         </div>
     );
