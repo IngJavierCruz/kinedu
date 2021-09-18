@@ -15,7 +15,7 @@ export const Milestone = () => {
                 <p className="card-text">{ data.subtitle }</p>
                 <h6>{ data.ageRange }</h6>
             </div>
-            <div>
+            <div className="d-flex align-items-center">
                 <ButtonMilestone  />
             </div>
         </div>

@@ -27,7 +27,7 @@
     }
 
     @include media-fluid(xs, md) {
-        & .title { font-size: 1rem; }
+        & .title { font-size: 1.2rem; }
     
         & .skill { font-size: 1.5rem; }
     }
