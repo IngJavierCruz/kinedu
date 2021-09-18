@@ -7,6 +7,7 @@ function App() {
       <div className="card shadow">
         <Area className="card-body" />
         <Milestones className="card-body" />
+        <button className="btn-next">Next</button>
       </div>
     </div>
   );

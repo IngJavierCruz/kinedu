@@ -1,6 +1,5 @@
 
 .container-wrapper {
-
     @include media-fluid(xs, md) {
         padding-right: 0!important;
         padding-left: 0!important;
@@ -24,8 +23,15 @@
 
     & .title, .skill {
         text-align: center;
-        font-weight: 600;
+        font-weight: 900;
     }
+    // & .title {
+    //     font-size: 1rem;
+    // }
+
+    // & .skill {
+    //     font-size: 1.5rem;
+    // }
 
     & .indicator {
         display: flex;
@@ -57,7 +63,6 @@
             color: #fff;
         }
 
-
     }
 }
 
@@ -80,4 +85,22 @@
     width: 70%;
     margin: 1rem auto;
     height: 2px;
+}
+
+.btn-next {
+    padding: 1rem 2rem;
+    display: inline-block;
+    background-color: $button-primary;
+    color: #fff;
+    border-radius: 1.5rem;
+    line-height: 1;
+    border: none;
+    font-weight: 700;
+    width: 420px;
+    margin: auto;
+    margin-bottom: 4rem;
+
+    @include media-fluid(xs, sm) {
+        width: 90%;
+    }
 }
