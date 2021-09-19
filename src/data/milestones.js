@@ -2,8 +2,8 @@ export const MILESTONES = [
     {
         id: 1,
         title: "Babbles like imitating conversation.",
-        subtitle: "",
-        agaRange: "",
+        subtitle: "Usually achieved by",
+        ageRange: "",
         state: "Not answered",
         typeSkill: "physical"
     },
@@ -11,7 +11,7 @@ export const MILESTONES = [
         id: 2,
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
-        agaRange: "2-4 months",
+        ageRange: "2-4 months",
         state: "Not answered",
         typeSkill: "physical"
     },
@@ -19,7 +19,7 @@ export const MILESTONES = [
         id: 3,
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
-        agaRange: "2-4 months",
+        ageRange: "2-4 months",
         state: "Not answered",
         typeSkill: "physical"
     },
@@ -27,7 +27,7 @@ export const MILESTONES = [
         id: 4,
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
-        agaRange: "2-4 months",
+        ageRange: "2-4 months",
         state: "Not answered",
         typeSkill: "physical"
     },
@@ -35,23 +35,23 @@ export const MILESTONES = [
         id: 5,
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
-        agaRange: "2-4 months",
+        ageRange: "2-4 months",
         state: "Not answered",
         typeSkill: "physical"
     },
     {
         id: 6,
         title: "Babbles like imitating conversation.",
-        subtitle: "",
-        agaRange: "",
+        subtitle: "Usually achieved by",
+        ageRange: "",
         state: "Not answered",
         typeSkill: "physical"
     },
     {
         id: 7,
         title: "Babbles like imitating conversation.",
-        subtitle: "",
-        agaRange: "",
+        subtitle: "Usually achieved by",
+        ageRange: "",
         state: "Not answered",
         typeSkill: "socialAndEmocional"
     },
@@ -59,7 +59,7 @@ export const MILESTONES = [
         id: 8,
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
-        agaRange: "2-4 months",
+        ageRange: "2-4 months",
         state: "Not answered",
         typeSkill: "socialAndEmocional"
     },
@@ -67,7 +67,7 @@ export const MILESTONES = [
         id: 9,
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
-        agaRange: "2-4 months",
+        ageRange: "2-4 months",
         state: "Not answered",
         typeSkill: "socialAndEmocional"
     },
@@ -75,7 +75,7 @@ export const MILESTONES = [
         id: 10,
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
-        agaRange: "2-4 months",
+        ageRange: "2-4 months",
         state: "Not answered",
         typeSkill: "socialAndEmocional"
     },
@@ -83,7 +83,7 @@ export const MILESTONES = [
         id: 11,
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
-        agaRange: "2-4 months",
+        ageRange: "2-4 months",
         state: "Not answered",
         typeSkill: "socialAndEmocional"
     }

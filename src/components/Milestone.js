@@ -7,8 +7,7 @@ const Milestone = ({ id, title, subtitle, ageRange, state }) => {
         <div className="milestone animate__animated animate__fadeInUp">
             <div>
                 <h5 className="card-title title">{ title }</h5>
-                <p className="card-text subtitle">{ subtitle }</p>
-                <h6>{ ageRange }</h6>
+                <p className="card-text subtitle">{ subtitle }  { ageRange }</p>
             </div>
             <div className="d-flex align-items-center justify-content-end">
                 <ButtonMilestone key={id} {...data }  />
