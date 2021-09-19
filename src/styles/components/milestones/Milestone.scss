@@ -18,7 +18,15 @@
 }
 
 .area  {
-    background-color: $physical-area;
+
+    &.area--physical {
+        background-color: $physical-area;
+    }
+
+    &.area--social {
+        background-color: $emotional-area;
+    }
+
     color: #ffffff;
 
     & .title, .skill {

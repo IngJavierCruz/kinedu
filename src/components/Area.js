@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Area = ({ title, body, skill}) => {
+export const Area = ({ title, body, skill, classArea}) => {
     return (
-        <div className="container-milestone area">
+        <div className={`container-milestone area ${ classArea }`}>
             <h3 className="title">Areas</h3>
             <div className="indicator">
                 <div className="indicator-item indicator--left">{ title }</div>
