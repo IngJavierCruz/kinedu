@@ -1,7 +1,8 @@
 import React from "react";
 import { ButtonMilestone } from "./ButtonMilestone";
 
-export const Milestone = ({ title, subtitle, ageRange, state, id }) => {
+export const Milestone = ({ id, title, subtitle, ageRange, state }) => {
+    const data = { id, state };
     return (
         <div className="milestone">
             <div>
@@ -10,7 +11,7 @@ export const Milestone = ({ title, subtitle, ageRange, state, id }) => {
                 <h6>{ ageRange }</h6>
             </div>
             <div className="d-flex align-items-center justify-content-end">
-                <ButtonMilestone key={id} state={state}  />
+                <ButtonMilestone key={id} {...data }  />
             </div>
         </div>
     );
