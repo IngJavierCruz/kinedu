@@ -15,7 +15,6 @@ export const ButtonMilestone = ({ id, state }) => {
 
         dispatch( updateIndicator( id, newState ));
     }
-    console.log(id);
     return (
         <button 
             className={ `btn-milestone ${ MilestoneStatus[state] }`} 

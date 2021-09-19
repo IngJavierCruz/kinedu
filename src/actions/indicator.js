@@ -10,3 +10,8 @@ export const changeAreaSkill = (nextPosition) => ({
     type: typeIndicator.uiChangeArea,
     payload: nextPosition
 });
+
+export const changeAreaSkillById = (areaId) => ({
+    type: typeIndicator.uiChangeAreaById,
+    payload: areaId
+});

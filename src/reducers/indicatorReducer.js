@@ -32,6 +32,17 @@ export const indicatorReducer = (state = initialState, action) => {
         }
       }
 
+    case typeIndicator.uiChangeAreaById:
+      const indexArea = state.areas.findIndex(x => x.id === action.payload);
+      console.log(state.areas[indexArea]);
+      return {
+        ...state,
+        areaActive: {
+          ...state.areas[indexArea],  
+          position: indexArea
+        }
+      }
+
     default:
       return state;
   }

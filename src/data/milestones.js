@@ -4,7 +4,7 @@ export const MILESTONES = [
         title: "Babbles like imitating conversation.",
         subtitle: "",
         agaRange: "",
-        state: "Complete",
+        state: "Not answered",
         typeSkill: "physical"
     },
     {
@@ -12,7 +12,7 @@ export const MILESTONES = [
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
         agaRange: "2-4 months",
-        state: "UnComplete",
+        state: "Not answered",
         typeSkill: "physical"
     },
     {
@@ -44,7 +44,7 @@ export const MILESTONES = [
         title: "Babbles like imitating conversation.",
         subtitle: "",
         agaRange: "",
-        state: "Complete",
+        state: "Not answered",
         typeSkill: "physical"
     },
     {
@@ -52,7 +52,7 @@ export const MILESTONES = [
         title: "Babbles like imitating conversation.",
         subtitle: "",
         agaRange: "",
-        state: "Complete",
+        state: "Not answered",
         typeSkill: "socialAndEmocional"
     },
     {
@@ -60,7 +60,7 @@ export const MILESTONES = [
         title: "Babbles like imitating conversation.",
         subtitle: "Usually achieved by:",
         agaRange: "2-4 months",
-        state: "UnComplete",
+        state: "Not answered",
         typeSkill: "socialAndEmocional"
     },
     {

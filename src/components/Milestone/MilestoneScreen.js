@@ -4,11 +4,13 @@ import { Milestones } from './../Milestones';
 import { Area } from './../Area';
 import { changeAreaSkill } from "../../actions/indicator";
 import { scrollToBottom } from "../../helpers/scrollView";
+import Swal from "sweetalert2";
 
 export const MilestoneScreen = () => {
   
   const dispatch = useDispatch();
   const { milestones, areaActive, areas } = useSelector(state => state.indicator);
+
   const isLast = areas.length === areaActive.position + 1;
   const areaPrevieOrNext = isLast 
     ? { ...areas[areaActive.position -1], isFirst: true } 
@@ -25,7 +27,18 @@ export const MilestoneScreen = () => {
   }
   
   const finishAssessment = () => {
-    alert("finish");
+    Swal.fire({
+      icon: "success",
+      title: "¡Congratulations your milestones have been saved!",
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      },
+      showConfirmButton: false,
+      timer: 2500
+    })
   }
 
   const areaRef = useRef(null);

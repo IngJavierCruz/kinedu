@@ -5,7 +5,7 @@ export const Area = (area) => {
     const { body, skill, classArea } = area;
 
     return (
-        <div className={`container-milestone area ${ classArea }`}>
+        <div className={`container-milestone area ${ classArea }` }>
             <h3 className="title">Areas</h3>
             <div className="indicator">
                 <Indicators  { ...area } />
