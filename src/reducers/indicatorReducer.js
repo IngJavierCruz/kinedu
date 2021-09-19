@@ -5,7 +5,7 @@ import { AREAS } from './../data/areas';
 const initialState = {
   milestones: MILESTONES,
   areas: AREAS,
-  areaActive: AREAS.filter(x => x.active)[0]
+  areaActive: { ...AREAS.filter(x => x.active)[0], position: 0 }
 };
 
 export const indicatorReducer = (state = initialState, action) => {
@@ -24,11 +24,12 @@ export const indicatorReducer = (state = initialState, action) => {
       }
 
     case typeIndicator.uiChangeArea:
-      console.log(action.payload);
-      console.log({ ...state.areas[action.payload]});
       return {
         ...state,
-        areaActive: {...state.areas[action.payload]}
+        areaActive: {
+          ...state.areas[action.payload], 
+          position: action.payload
+        }
       }
 
     default:

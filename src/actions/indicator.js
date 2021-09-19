@@ -6,7 +6,7 @@ export const updateIndicator = (id, state) => ({
 });
 
 
-export const changeAreaSkill = (indexCurrent) => ({
+export const changeAreaSkill = (nextPosition) => ({
     type: typeIndicator.uiChangeArea,
-    payload: indexCurrent + 1
+    payload: nextPosition
 });
