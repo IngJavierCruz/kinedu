@@ -10,11 +10,15 @@ export const MilestoneScreen = () => {
   const dispatch = useDispatch();
   const { milestones, areaActive, areas } = useSelector(state => state.indicator);
   const isLast = areas.length === areaActive.position + 1;
+  const areaPrevieOrNext = isLast 
+    ? { ...areas[areaActive.position -1], isFirst: true } 
+    : { ...areas[areaActive.position +1], isFirst: false };
+
   const area = {
     ...areaActive,
+    areaPrevieOrNext,
     milestones: milestones.filter(x => x.typeSkill === areaActive.type)
   }
-  
   
   const navegateSection = () => {
     dispatch( changeAreaSkill( areaActive.position + 1));
@@ -35,7 +39,7 @@ export const MilestoneScreen = () => {
         {
           isLast 
           ? <button 
-              className="btn-next animate__animated animate__fadeInLeft" 
+              className="btn-next animate__animated " 
               onClick={ finishAssessment }>
                 Finish assessment
             </button>

@@ -1,12 +1,14 @@
 import React from "react";
+import { Indicators } from './Indicators';
 
-export const Area = ({ title, body, skill, classArea}) => {
+export const Area = (area) => {
+    const { body, skill, classArea } = area;
+
     return (
         <div className={`container-milestone area ${ classArea }`}>
             <h3 className="title">Areas</h3>
             <div className="indicator">
-                <div className="indicator-item indicator--left">{ title }</div>
-                <div className="indicator-item indicator--rigth">Social & emotional</div>
+                <Indicators  { ...area } />
             </div>
             <hr className="divider" />
             
