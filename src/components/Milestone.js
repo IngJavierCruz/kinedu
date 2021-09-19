@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonMilestone } from "./ButtonMilestone";
 
-export const Milestone = ({ id, title, subtitle, ageRange, state }) => {
+const Milestone = ({ id, title, subtitle, ageRange, state }) => {
     const data = { id, state };
     return (
         <div className="milestone">
@@ -16,3 +16,5 @@ export const Milestone = ({ id, title, subtitle, ageRange, state }) => {
         </div>
     );
 }
+
+export default React.memo(Milestone);
