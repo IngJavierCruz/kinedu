@@ -38,7 +38,11 @@ export const MilestoneScreen = () => {
       },
       showConfirmButton: false,
       timer: 2500
-    })
+    });
+
+    localStorage.setItem("milestones", JSON.stringify(milestones));
+    localStorage.setItem("areaActive", JSON.stringify(areaActive));
+    localStorage.setItem("areas", JSON.stringify(areas));
   }
 
   const areaRef = useRef(null);

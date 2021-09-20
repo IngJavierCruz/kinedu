@@ -3,9 +3,9 @@ import { typeIndicator } from "../types/typeIndicator";
 import { AREAS } from './../data/areas';
 
 const initialState = {
-  milestones: MILESTONES,
-  areas: AREAS,
-  areaActive: { ...AREAS.filter(x => x.active)[0], position: 0 }
+  milestones:  JSON.parse(localStorage.getItem("milestones")) ||  MILESTONES,
+  areas: JSON.parse(localStorage.getItem("areas")) ||  AREAS,
+  areaActive: JSON.parse(localStorage.getItem("areaActive")) || { ...AREAS.filter(x => x.active)[0], position: 0 }
 };
 
 export const indicatorReducer = (state = initialState, action) => {
